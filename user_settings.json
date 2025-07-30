@@ -1,0 +1,205 @@
+{
+  "editor.fontSize": 15,
+  "window.enableMenuBarMnemonics": false,
+  "breadcrumbs.enabled": false,
+  "sync.gist": "fc00e3fca300ee9e8b1a9a4ffacc4ee4",
+  "editor.minimap.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "window.menuBarVisibility": "compact",
+  // dont preview when opening file
+  "workbench.editor.enablePreview": false,
+  // use git bash for internal and external shell windows
+  "terminal.external.windowsExec": "C:\\Users\\PD\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+  // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+  "terminal.integrated.defaultLocation": "editor",
+  // show .git folder
+  "files.exclude": {
+    "**/.git": false
+  },
+  //running code
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    // linux
+    "cpp": "echo $PWD && cd $PWD && mkdir -p out && g++ -Wall -std=c++14 -o out//$fileNameWithoutExt $fullFileName && echo && out//$fileNameWithoutExt",
+    // "cpp": "mkdir -p $dir\\out && g++ -Wall -std=c++14 -o $dir\\out\\$fileNameWithoutExt $fullFileName && echo && $dir\\out\\$fileNameWithoutExt",
+    // windows
+    // "cpp": "cd $PWD && mkdir -Force out > $null && g++ -Wall -std=c++14 -o out//$fileNameWithoutExt $fullFileName && echo '' && out\\$fileNameWithoutExt",
+    // "python": "echo && python $fullFileName"
+    // "python": "echo && 'piy_test\\piy_venv\\Scripts\\python.exe' $fullFileName"
+  },
+  // prettier extension
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // exclude from search
+  "search.exclude": {
+    "**/android/app/build": true, // RN Android build folder
+    "**/bower_components": true, // Bower
+    "**/ios/build": true, // RN iOS build folder
+    "**/ios/Pods": true, // iOS Pods code
+    // "**/lib": true, // Compiled javascript
+    "**/node_modules": true, // NPM
+    "**/bld": true // build folder when compiling for c++
+  },
+  // python
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+    // "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  // visual
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#15191b",
+    "editorGroupHeader.tabsBackground": "#15191b",
+    "editor.background": "#15191b",
+    "activityBar.background": "#15191b",
+    "panel.background": "#15191b",
+    "statusBar.background": "#14191f",
+    "statusBar.noFolderBackground": "#14191f",
+    "sideBarTitle.foreground": "#cccccc",
+    "sideBarSectionHeader.background": "#151a1f",
+    "sideBarSectionHeader.foreground": "#777777",
+    "sideBar.border": "#1d242c",
+    "sideBar.background": "#15191b",
+    "tab.activeBackground": "#14191f",
+    "tab.inactiveBackground": "#15191b",
+    "tab.activeForeground": "#d1d4d3",
+    "tab.activeBorder": "#66D9EF",
+    "tab.inactiveForeground": "#777777",
+    "tab.border": "#1d242c",
+    "tab.unfocusedActiveForeground": "#d1d4d3AA",
+    "tab.unfocusedInactiveForeground": "#777777",
+    "tab.unfocusedActiveBorder": "#777777",
+    "statusBarItem.remoteBackground": "#15191b"
+  },
+  "editor.tokenColorCustomizations": {
+    // comments color
+    "comments": "#74715E",
+    "entity.name.function": "#F92672",
+    // triple quotes for python
+    "textMateRules": [
+      {
+        "scope": "string.quoted.docstring.multi.python",
+        "settings": {
+          "foreground": "#74715E"
+        }
+      }
+    ]
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnType": false
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnType": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "prettier.tabWidth": 4,
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4}",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4}",
+  "C_Cpp.updateChannel": "Insiders",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.menus": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.semanticHighlighting.enabled": true,
+  "python.languageServer": "Default",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  // "update.mode": "none",
+  "gitlens.advanced.telemetry.enabled": false,
+  "code-runner.enableAppInsights": false,
+  "liveshare.presence": true,
+  "remote.SSH.remotePlatform": {
+    "192.168.0.91": "linux",
+    "192.168.0.92": "linux",
+    "VM-ubuntu_20_04_20": "linux",
+    "DigitalOceanDroplet": "linux",
+    "Vultr": "linux",
+    "Oracle": "linux",
+    "192.168.127.168": "linux",
+    "192.168.127.169": "linux",
+    "192.168.127.167": "linux",
+    "192.168.127.70": "linux",
+    "192.168.127.71": "linux",
+    "192.168.127.150": "linux",
+    "192.168.127.149": "linux",
+    "192.168.127.144": "linux",
+    "192.168.127.146": "linux"
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.pdf": "pdf.preview",
+    "*.png": "imagePreview.previewEditor"
+  },
+  "cmake.configureOnOpen": false,
+  "editor.formatOnType": true,
+  "[rust]": {
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
+  },
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "never",
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  // codeforces
+  "cph.general.defaultLanguage": "cpp",
+  "cph.general.firstTime": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "never",
+  "[proto3]": {
+    "editor.defaultFormatter": "zxh404.vscode-proto3"
+  },
+  "rewrap.wrappingColumn": 80,
+  "rust-analyzer.rustfmt.extraArgs": [
+    "max_width=80"
+],
+  // "editor.wordWrap": "on"
+  "terminal.integrated.autoReplies": {
+    "Terminate batch job (Y/N)": "Y\r"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "telemetry.telemetryLevel": "off",
+  "enable-crash-reporter": false,
+  "settingsSync.keybindingsPerPlatform": false,
+  "cmake.showOptionsMovedNotification": false,
+"editor.accessibilitySupport": "off",
+  "settingsSync.ignoredExtensions": [
+    "angular.ng-template"
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "amazonQ.showInlineCodeSuggestionsWithCodeReferences": false,
+  "amazonQ.importRecommendationForInlineCodeSuggestions": false,
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Simple Red White (dark) Theme",
+  "remote.autoForwardPortsSource": "hybrid",
+}
